@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoHaven Collection</title>
+    <link rel="stylesheet" href="product.css" />
+    <a href="shop.html" class="Shop-link">Shop</a>
+    <style>
+      .section { display: none; }
+      .section.active { display: block; }
+      .nav-menu a.active { font-weight: bold; text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo"><a href="home.html"> EcoShop </a></div>
+      <div class="topbar-links">
+        <a href="#" onclick="showSection('product')" class="collection-link"></a>
+        <a href="profile.html" class="profile-icon" title="Profile">
+          <img src="img.1.jpg" alt="Profile" />
+        </a>
+      </div>
+    </div>
+
+    <header class="top-bar">
+      <input type="text" placeholder="🔍 Basket" class="search-bar" />
+      <button class="filter-btn">⚙️</button>
+    </header>
+
+    <nav class="nav-menu">
+      <a href="#" onclick="showSection('shop', event)" class="active">Shop</a>
+      <a href="#" onclick="showSection('product', event)">Product</a>
+      <a href="#" onclick="showSection('categories', event)">Categories</a>
+    </nav>
+
+    <section class="collection-title">
+      <h2>Shop EcoHaven</h2>
+    </section>
+
+    <main class="product-grid">
+      <!-- Card Items -->
+      <a href="product-detail.html" class="card">
+        <img src="Fruit basket" alt="Fruit Basket" width="500px" height="500px" />
+        <h3>Onion Basket</h3>
+        <p>Rs.350.00</p>
+      </a>
+
+      <a href="product-detail.html" class="card">
+        <img src="Fruit " alt="Fruit Basket" width="500px" height="500px" />
+        <h3>Fruit Basket</h3>
+        <p>Rs.400.00</p>
+      </a>
+
+      <a href="product-detail.html" class="card">
+        <img src="Large basket.jpg" alt="Lager Basket"  width="500px" height="500px"/>
+        <h3>Lager Basket</h3>
+        <p>Rs.720.00</p>
+      </a>
+
+      <a href="product-detail.html" class="card">
+        <img src="Nampan basket.jpg" alt="Nampan Basket" width="500px" height="500px"/>
+        <h3>Nampan Basket</h3>
+        <p>Rs.750.00</p>
+      </a>
+
+      <!-- Additional Cards -->
+      <a href="product-detail.html" class="card">
+        <img src="clothes basket.jpg" alt="Clothes Basket" width="500px" height="500px"/>
+        <h3>Clothes Basket</h3>
+        <p>Rs.850.00</p>
+      </a>
+
+      <a href="product-detail.html" class="card">
+        <img src="utility basket.jpg" alt="Utility Basket" width="500px" height="500px"/>
+        <h3>Utility Basket</h3>
+        <p>Rs.600.00</p>
+      </a>
+
+      <a href="product-detail.html" class="card">
+        <img src="mini basket.jpg" alt="Mini Basket" width="500px" height="500px"/>
+        <h3>Mini Basket</h3>
+        <p>Rs.250.00</p>
+      </a>
+
+      <a href="product-detail.html" class="card">
+        <img src="gift basket" alt="Gift Basket" width="500px" height="500px"/>
+        <h3>Gift Basket</h3>
+        <p>Rs.450.00</p>
+      </a>
+    </main>
+    
+    <script>
+      function showSection(sectionId, event) {
+        if (event) event.preventDefault(); // Prevents default anchor link behavior
+    
+        const sections = document.querySelectorAll('.section');
+        sections.forEach((section) => {
+          section.classList.remove('active');
+        });
+    
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+          targetSection.classList.add('active');
+        }
+    
+        // Update nav active state
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+          link.classList.remove('active');
+        });
+        event?.target.classList.add('active');
+      }
+    </script>
+    
+
+  </body>
+</html>

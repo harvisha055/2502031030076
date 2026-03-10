@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.topbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.collection-link {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.collection-link:hover {
+  color: #27ae60;
+}
+
+.profile-icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.product-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.product-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eee;
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.product-info {
+  flex: 1.2;
+  padding: 30px;
+}
+
+.product-info h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.price {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f39c12;
+}
+
+.whatsapp-share a {
+  display: inline-block;
+  font-size: 14px;
+  color: green;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.grosir-btn {
+  display: block;
+  background: #5a3b2e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.shipping {
+  background: #fcefe4;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 6px solid #a26c43;
+}
+
+.shipping h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.free-shipping {
+  font-size: 14px;
+  color: #27ae60;
+}
+
+.arrival {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.cod {
+  background: #fff;
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 6px 16px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.store-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.visit-store-btn {
+  background: #3b2e2a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.buy-btn {
+  background: #67c402;
+  color: white;
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #55a600;
+}
